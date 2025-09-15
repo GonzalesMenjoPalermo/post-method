@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET AND POST</title>
+</head>
+<body> 
+    <form action="getpost.php" method="post">
+        <label>SHOE STORE</label> <br>
+        <input type="text" name="SHOE STORE">
+        <input type="submit" value="Enter a shoe you want!">
+
+
+
+
+    </form>
+    
+</body>
+</html>
+<?php
+$item = "shoe";
+$price = 5,000
+$quantity = $_POST["SHOE STORE"];
+$total = null;
+$total = $shoestore * $price;
+
+
+echo"you have ordered {$shoestore} x {$item}/s" <br>;
+echo"your total is:{$total}"
+
+?>
